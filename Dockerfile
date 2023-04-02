@@ -8,7 +8,7 @@ WORKDIR /app
 RUN pip install flask
 
 # Copy the Flask project files into the container
-COPY WorldOfGames/MainScores.py .
+COPY MainScores.py .
 COPY Utils.py .
 
 # Copy the Scores.txt file into the container
