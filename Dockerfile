@@ -12,7 +12,7 @@ COPY MainScores.py .
 COPY Utils.py .
 
 # Copy the Scores.txt file into the container
-COPY /Scores.txt .
+COPY Scores.txt .
 
 # Expose the port the app runs on
 EXPOSE 5000

@@ -1,7 +1,7 @@
 version: "3.9"
 services:
   wog:
-    image: wog
+    image: sagi101/wogtest:1.0.0
     ports:
       - "8080:5000"
     environment:
