@@ -1,13 +1,11 @@
-
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 
 def test_scores_service(url):
-
-    mydriver = webdriver.chrome()
-    mydriver.get(url)
-    score = mydriver.find_element(By.ID, 'score')
+    my_driver = webdriver.Chrome()
+    my_driver.get(url)
+    score = my_driver.find_element(By.ID, "score")
     score = int(score.text)
     if 1 < score < 1000:
         return True
@@ -15,10 +13,10 @@ def test_scores_service(url):
         return False
 
 def main_function():
-    url = 'http://127.0.0.1:8777'
-    if test_scores_service(url):
-        return 0
-    else:
-        return -1
+   url = 'http://127.0.0.1:8777/'
+   if test_scores_service(url):
+       return 0
+   else:
+       return -1
 
 main_function()
