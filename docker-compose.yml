@@ -3,6 +3,6 @@ services:
   wog:
     image: sagi101/wog
     ports:
-      - "8080:5000"
+      - "8777:5000"
     environment:
       - NGINX_PORT=80
