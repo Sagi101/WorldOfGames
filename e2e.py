@@ -1,9 +1,9 @@
-from MainScores import url
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 
-def test_scores_service():
+def test_scores_service(url):
 
     mydriver = webdriver.chrome()
     mydriver.get(url)
@@ -15,7 +15,8 @@ def test_scores_service():
         return False
 
 def main_function():
-    if test_scores_service():
+    url = 'http://127.0.0.1:8777'
+    if test_scores_service(url):
         return 0
     else:
         return -1
